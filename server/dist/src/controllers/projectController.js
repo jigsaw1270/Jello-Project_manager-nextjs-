@@ -30,8 +30,8 @@ const createProjects = (req, res) => __awaiter(void 0, void 0, void 0, function*
                 name,
                 description,
                 startDate,
-                endDate
-            }
+                endDate,
+            },
         });
         res.status(201).json(newProject);
     }
