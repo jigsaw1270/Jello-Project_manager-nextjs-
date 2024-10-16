@@ -2,11 +2,11 @@ import Header from '@/components/Header';
 import React, { useState } from 'react'
 
 type Props = {
-    activeTab : string ;
-    setActiveTab : (tabName : string) => void
-}
+    activeTab: string;
+    setActiveTab: (tabName: string) => void;
+  };
 
-const ProjectHeader = (props: Props) => {
+const ProjectHeader = ({ activeTab, setActiveTab }: Props) => {
     const [isModalNewProjectOpen ,setIsModalNewTaskOpen] = useState(false);
   return (
     <div className='px-4 xl:px-6'>
