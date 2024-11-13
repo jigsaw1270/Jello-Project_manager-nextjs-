@@ -6,6 +6,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import projectRoutes from "./routes/projectRoutes";
 import taskRoutes from "./routes/taskRoutes";
+import searchRoutes  from "./routes/searchRoutes";
 
 
 // route imports 
@@ -29,7 +30,8 @@ app.get("/",(req,res) => {
     res.send("this  is home  route");
 });
 app.use("/projects", projectRoutes);
-app.use("/tasks", taskRoutes)
+app.use("/tasks", taskRoutes);
+app.use("/search",searchRoutes);
 
 
 //server 
