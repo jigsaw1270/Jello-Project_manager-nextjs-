@@ -12,6 +12,7 @@ export enum  Priority {
     High = "High",
     Medium = "Medium",
     Backlog = " Backlog",
+    Low = "Low",
 }
 export enum  Status {
     ToDo = "To DO",

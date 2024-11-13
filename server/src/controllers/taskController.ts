@@ -49,9 +49,19 @@ export const createTask = async (
     const { title , description, status , priority ,tags , startDate , dueDate , points, projectId ,  authorUserId, assignedUserId } = req.body;
     try {
        const newTask = await prisma.task.create({
-        data: {
-            title , description, status , priority ,tags , startDate , dueDate , points, projectId ,  authorUserId, assignedUserId
-        }
+       data: {
+                title,
+                description,
+                status,
+                priority,
+                tags,
+                startDate,
+                dueDate,
+                points,
+                projectId,
+                authorUserId,
+                assignedUserId
+            }
        });
        res.status(201).json(newTask);
    
